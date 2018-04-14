@@ -14,9 +14,7 @@
   ],
   "background": {
     "scripts": [
-      "lib/jquery-3.3.1.min.js",
       "js/util.js",
-      "js/snapshot_handler.js",
       "js/background.js"
     ]
   },
@@ -27,7 +25,6 @@
   },
   "icons": {
     "128": "128.png"
-  },
-  "options_page": "options.html"
+  }
 }
 
