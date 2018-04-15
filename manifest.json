@@ -1,8 +1,8 @@
 {
   "name": "Cookie Snapshots",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
-  "description": "Save and restore cookies for multiple login sessions. This is useful to switch logged in user.",
+  "description": "Save and restore cookies quickly! It's like behaves multiple login sessions.",
   "permissions": [
     "tabs",
     "\u003Call_urls\u003E", "cookies",

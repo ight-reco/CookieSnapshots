@@ -28,10 +28,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 deleteSnapshot(origin, request.value)
                     .then(() => { sendResponse({}) });
                 break;
-            case 'reset':
-                resetAll()
-                    .then(() => { sendResponse({}) });
-                break;
 
             default:
                 console.log('unknown action: ' + action.name);
@@ -56,7 +52,7 @@ function getSnapshots(origin) {
         all[origin] = [
             {
                 id: 1,
-                name: 'NoCookie',
+                name: 'No Cookies (for clear)',
                 cookies: [],
                 url: origin,
             },
@@ -124,12 +120,6 @@ function restoreSnapshot(origin, id) {
 function deleteSnapshot(origin, id) {
     all[origin] = all[origin].filter(s => { return s.id != id });
     localStorage.all = JSON.stringify(all);
-    return Promise.resolve();
-}
-
-function resetAll() {
-    delete localStorage.all;
-    all = loadSnapshots();
     return Promise.resolve();
 }
 
