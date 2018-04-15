@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
             div.append(snapshot.name + ': ');
             div.append(`<a id="${snapshot.id}-restore" href="#">Restore</a>`);
             if (snapshot.id != 1) {
-                div.append(`, <a id=" ${snapshot.id}-delete" href="#">Delete</a>`);
+                div.append(`, <a id="${snapshot.id}-delete" href="#">Delete</a>`);
             }
             div.append('<br>');
         
