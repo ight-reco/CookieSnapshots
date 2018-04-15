@@ -1,5 +1,6 @@
 # CookieSnapshots
-Cookie Snapshots is Google Chrome Extension to save and restore cookies.
+[Cookie Snapshots](https://chrome.google.com/webstore/detail/cookie-snapshots/ooclnkkjgmancflgfibomlfacdafeklh) is Google Chrome Extension to save and restore cookies.
+
 
 <img src="/img/screenshot.png">
 
