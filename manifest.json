@@ -2,15 +2,11 @@
   "name": "Cookie Snapshots",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "For switch login session speadly",
+  "description": "Save and restore cookies for multiple login sessions. This is useful to switch logged in user.",
   "permissions": [
     "tabs",
     "\u003Call_urls\u003E", "cookies",
-    "contextMenus",
-    "unlimitedStorage",
-    "notifications",
-    "storage",
-    "clipboardWrite"
+    "storage"
   ],
   "background": {
     "scripts": [
